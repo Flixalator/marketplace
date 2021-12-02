@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #EFF0F1;
+    height: 46px;
+}
+.about-us .place{
+    display: flex;
+    margin-left: 50px;
+    width: 50%;
+}
+.about-us i{
+    margin-right: 5px;
+    color: #676767;
+}
+.about-us .info{
+    color: #676767;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
