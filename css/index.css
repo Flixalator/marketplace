@@ -2,14 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Oswald, sans-serif;
 }
-/*стили для контактной панели */
+/* Global preferences */
+.align-right-top {
+    position: relative;
+    top: -5px;
+    left: -8px;
+}
+.round{
+    border-radius: 50%;
+    background-color: #E5E5E7;
+    width: 10px;
+    height: 10px;
+}
+/* Contact panel */
 .about-us{
     display: flex;
     align-items: center;
     flex-direction: row;
     background: #EFF0F1;
-    height: 46px;
+    height: 38px;
 }
 .about-us .place{
     display: flex;
@@ -25,4 +38,71 @@
     display: flex;
     justify-content: space-around;
     width: 50%;
+}
+/* Navigation panel */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 0 0;
+    justify-content: space-between;
+    border-bottom: 2px solid #DDDDDD;
+    font-size: 16px;
+    width: 100%;
+}
+nav .logo{
+    margin-left: 50px;
+}
+nav .logo span:first-child{
+    color: #3C39D0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+}
+nav .logo span:last-child{
+    font-weight: 700;
+    font-size: 30px;
+}
+nav .pagination{
+    height: 50px;
+}
+nav .pagination ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 100%;
+}
+nav .pagination li {
+    margin-right: 20px;
+    font-size: 20px;
+    height: 100%;
+    transition: .2s;
+}
+nav .pagination li:hover {
+    border-bottom: 2px solid #4945FF;
+    cursor: pointer;
+}
+nav .interface{
+    display: flex;
+    flex-direction: row;
+    margin-right: 19px;
+}
+nav .interface .cart,
+nav .interface .likes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav .interface i,
+nav .interface .likes i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+nav .interface .order{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 40px;
+    padding: 10px 40px;
+    background-color: purple;
+    color: #EFF0F1;
 }
